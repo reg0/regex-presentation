@@ -104,3 +104,17 @@ $ - end of a string/line
 {2,} - something occurs at least 2 times
 ```
 
+## Grouping
+* can be used to capture parts to be used in replace
+* can be combined with quantifiers
+* can be joined with OR `|` operator to create an alternative
+
+## Lookahead and lookbehind
+### Positive lookahead
+`foo(?=bar)` will match `foo` only if it's followed by `bar`
+### Negative lookahead
+`foo(?!bar)` will match `foo` followed by anything but `bar`
+### Positive lookbehind
+`(?<=foo)bar` will match `bar` only if it follows `foo`
+### Negative lookbehind
+`/(?<!foo)bar/` will match `bar` only if it NOT follows `foo`
