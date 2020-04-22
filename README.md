@@ -19,8 +19,8 @@
     \_  \_   \_  \_   \_  \_   \_  \_   \_   \_          \_
      \_\_       \_     \_  \_   \_  \_   \_   \_\_\_  \_\_
       
-  By Kamil Mikolajczyk and Krystian Przybyla-Warmuzinski
-                       23.04.2020
+     By Kamil Mikolajczyk and Krystian Przybyla-Warmuzinski
+                          23.04.2020
   
 ```
 
@@ -118,3 +118,13 @@ $ - end of a string/line
 `(?<=foo)bar` will match `bar` only if it follows `foo`
 ### Negative lookbehind
 `/(?<!foo)bar/` will match `bar` only if it NOT follows `foo`
+
+## Modifiers
+They change global behavior of matching
+```
+\g - global - causes NOT stopping matching after first occurrence
+\i - case insensitivity
+\m - multi-line - handles ^$ per line, instead of whole input
+\y - sticky - matches only beginning of the input in sequence
+\u - unicode - extra handling of unicode chars
+```
