@@ -31,6 +31,7 @@
 * Quantifiers (occurence and repetition)
 * Grouping
 * Lookahead and lookbehind
+* Modifiers
 * Advanced usage and examples
 
 ## Introduction
@@ -75,3 +76,31 @@ $ - end of a string/line
 \xZZ - a hex char ZZ
 \0 - null
 ```
+
+### Special characters
+`.^$\[]{}()?*+|`
+
+## Any/None
+```
+[] - any of matches
+[^] - none of matches
+
+[ab] - a or b
+[abc] - a or b or c
+[c-r] - any of c,d,e,f,....,p,q,r
+[a-zA-Z] - any letter
+[^a-z] - anything but a lowercase letter
+[^79h] - anything else than 7, 9 and h
+```
+
+## Quantifiers
+```
+? - 0 or 1 occurrence
++ - at least 1 occurrence
+* - 0 or more occurrence
+
+{4} - something occurs exactly 4 times
+{5,10} - something occurs between 5 and 10 times
+{2,} - something occurs at least 2 times
+```
+
