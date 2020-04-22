@@ -1,23 +1,23 @@
 # Hate it or love it - regular expressions
 
 ```
-  \_\_\_  \_\_\_   \_\_  \_\_\_  \_  \_
-   \_  \_  \_     \_      \_      \_  \_
-    \_\_    \_\_   \_  \_  \_\_      \_
-     \_  \_  \_     \_  \_  \_      \_  \_
-      \_  \_  \_\_\_   \_\_  \_\_\_  \_  \_
+  \_\_\_   \_\_\_   \_\_   \_\_\_  \_  \_
+   \_  \_   \_     \_       \_      \_  \_
+    \_\_     \_\_   \_  \_   \_\_      \_
+     \_  \_   \_     \_  \_   \_      \_  \_
+      \_  \_   \_\_\_   \_\_   \_\_\_  \_  \_
       
-             \_\_\_   \_    \_\_    
-              \_     \_  \_  \_  \_  
-               \_\_   \_  \_  \_\_    
-                \_     \_  \_  \_  \_   
-                 \_       \_    \_  \_  
+             \_\_\_    \_     \_\_    
+              \_      \_  \_   \_  \_  
+               \_\_    \_  \_   \_\_    
+                \_      \_  \_   \_  \_   
+                 \_        \_     \_  \_  
           
-  \_\_    \_  \_  \_  \_  \_  \_  \_  \_\_\_    \_\_
-   \_  \_  \_  \_  \_\_\_  \_\_\_  \_  \_      \_
-    \_  \_  \_  \_  \_  \_  \_  \_  \_  \_\_      \_
-     \_  \_  \_  \_  \_  \_  \_  \_  \_  \_          \_
-      \_\_      \_    \_  \_  \_  \_  \_  \_\_\_  \_\_
+ \_\_     \_  \_   \_  \_   \_  \_   \_   \_\_\_    \_\_
+  \_  \_   \_  \_   \_\_\_   \_\_\_   \_   \_      \_
+   \_  \_   \_  \_   \_  \_   \_  \_   \_   \_\_      \_
+    \_  \_   \_  \_   \_  \_   \_  \_   \_   \_          \_
+     \_\_       \_     \_  \_   \_  \_   \_   \_\_\_  \_\_
       
   By Kamil Mikolajczyk and Krystian Przybyla-Warmuzinski
                        23.04.2020
@@ -105,9 +105,9 @@ $ - end of a string/line
 ```
 
 ## Grouping
-* can be used to capture parts to be used in replace
+* can be used to reference chunks for substitution
 * can be combined with quantifiers
-* can be joined with OR `|` operator to create an alternative
+* can be joined with `|` operator to create an alternative
 
 ## Lookahead and lookbehind
 ### Positive lookahead
